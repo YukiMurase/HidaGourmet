@@ -156,7 +156,7 @@ class PlayViewController: UIViewController ,UIGestureRecognizerDelegate{
             setumeiLabel2.text = ""
             nameLabel.text = "バーガー"
             imagecount = 1
-            moveimage1.image = UIImage(named: "飛騨牛バーガー\(imagecount).png")
+            moveimage1.image = UIImage(named: "飛騨牛バーガー\(imagecount).png")
             break
         case 11:
             explainLabel.text = "タップで食べる"
@@ -197,13 +197,13 @@ class PlayViewController: UIViewController ,UIGestureRecognizerDelegate{
         
         // 画像の位置から画面右までにかかる時間の計算
         //let remainTime = (view.bounds.size.width - target.frame.origin.x) * timePerSecond
-        ram = Int(arc4random_uniform(15))
-        shori(suti: Int(ram))
         let remainTime = 1
         // アニメーション
         UIImageView.transition(with: target, duration: TimeInterval( remainTime), options: .curveLinear, animations: { () -> Void in
                 // 画面左方向に移動
             if self.testflg {
+                self.ram = Int(arc4random_uniform(15))
+                self.shori(suti: Int(self.ram))
                 target.frame.origin.x = self.centerPoint!
             } else {
                 target.frame.origin.x = -(target.frame.size.width)
@@ -300,7 +300,7 @@ class PlayViewController: UIViewController ,UIGestureRecognizerDelegate{
                 switch ram{
                 case 1:
                     imagecount = imagecount + 1
-                    moveimage1.image = UIImage(named: "飛騨牛カレー\(imagecount).png")
+                    moveimage1.image = UIImage(named: "飛騨牛カレー \(imagecount).png")
                     break
                 case 2:
                     imagecount = imagecount + 1
@@ -328,7 +328,7 @@ class PlayViewController: UIViewController ,UIGestureRecognizerDelegate{
                     break
                 case 10:
                     imagecount = imagecount + 1
-                    moveimage1.image = UIImage(named: "飛騨牛バーガー\(imagecount).png")
+                    moveimage1.image = UIImage(named: "飛騨牛バーガー\(imagecount).png")
                     break
                 case 11:
                     imagecount = imagecount + 1
@@ -350,6 +350,7 @@ class PlayViewController: UIViewController ,UIGestureRecognizerDelegate{
                     count = count + 1
                     testflg = false
                     self.animateImage(target: foodTapView)
+                    counttap = 0
                     flg = 0
                     if(out == 0){
                         correct = correct + 1
