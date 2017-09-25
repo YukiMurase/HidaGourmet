@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3238A2861F795267001D4BFD /* 飛騨牛バーガー1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3238A27C1F7951E4001D4BFD /* 飛騨牛バーガー1.png */; };
+		3238A2871F795267001D4BFD /* 飛騨牛バーガー10.png in Resources */ = {isa = PBXBuildFile; fileRef = 3238A27D1F7951E4001D4BFD /* 飛騨牛バーガー10.png */; };
+		3238A2881F795267001D4BFD /* 飛騨牛バーガー2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3238A27E1F7951E4001D4BFD /* 飛騨牛バーガー2.png */; };
+		3238A2891F795267001D4BFD /* 飛騨牛バーガー3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3238A27F1F7951E4001D4BFD /* 飛騨牛バーガー3.png */; };
+		3238A28A1F795267001D4BFD /* 飛騨牛バーガー4.png in Resources */ = {isa = PBXBuildFile; fileRef = 3238A2801F7951E4001D4BFD /* 飛騨牛バーガー4.png */; };
+		3238A28B1F795267001D4BFD /* 飛騨牛バーガー5.png in Resources */ = {isa = PBXBuildFile; fileRef = 3238A2811F7951E4001D4BFD /* 飛騨牛バーガー5.png */; };
+		3238A28C1F795267001D4BFD /* 飛騨牛バーガー6.png in Resources */ = {isa = PBXBuildFile; fileRef = 3238A2821F7951E4001D4BFD /* 飛騨牛バーガー6.png */; };
+		3238A28D1F795267001D4BFD /* 飛騨牛バーガー7.png in Resources */ = {isa = PBXBuildFile; fileRef = 3238A2831F7951E4001D4BFD /* 飛騨牛バーガー7.png */; };
+		3238A28E1F795267001D4BFD /* 飛騨牛バーガー8.png in Resources */ = {isa = PBXBuildFile; fileRef = 3238A2841F7951E4001D4BFD /* 飛騨牛バーガー8.png */; };
+		3238A28F1F795267001D4BFD /* 飛騨牛バーガー9.png in Resources */ = {isa = PBXBuildFile; fileRef = 3238A2851F7951E4001D4BFD /* 飛騨牛バーガー9.png */; };
 		D579E65B1F46D89100C8C945 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D579E65A1F46D89100C8C945 /* AppDelegate.swift */; };
 		D579E65D1F46D89100C8C945 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D579E65C1F46D89100C8C945 /* ViewController.swift */; };
 		D579E6601F46D89100C8C945 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D579E65E1F46D89100C8C945 /* Main.storyboard */; };
@@ -147,16 +157,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		74F02F5F1F47EABA00FBA9CB /* 飛騨牛バーガー2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "飛騨牛バーガー2.png"; sourceTree = "<group>"; };
-		74F02F601F47EABA00FBA9CB /* 飛騨牛バーガー4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "飛騨牛バーガー4.png"; sourceTree = "<group>"; };
-		74F02F611F47EABA00FBA9CB /* 飛騨牛バーガー3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "飛騨牛バーガー3.png"; sourceTree = "<group>"; };
-		74F02F621F47EABA00FBA9CB /* 飛騨牛バーガー5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "飛騨牛バーガー5.png"; sourceTree = "<group>"; };
-		74F02F631F47EABA00FBA9CB /* 飛騨牛バーガー6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "飛騨牛バーガー6.png"; sourceTree = "<group>"; };
-		74F02F641F47EABA00FBA9CB /* 飛騨牛バーガー7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "飛騨牛バーガー7.png"; sourceTree = "<group>"; };
-		74F02F651F47EABA00FBA9CB /* 飛騨牛バーガー8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "飛騨牛バーガー8.png"; sourceTree = "<group>"; };
-		74F02F661F47EABA00FBA9CB /* 飛騨牛バーガー9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "飛騨牛バーガー9.png"; sourceTree = "<group>"; };
-		74F02F671F47EABA00FBA9CB /* 飛騨牛バーガー10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "飛騨牛バーガー10.png"; sourceTree = "<group>"; };
-		74F02F681F47EABA00FBA9CB /* 飛騨牛バーガー1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "飛騨牛バーガー1.png"; sourceTree = "<group>"; };
+		3238A27C1F7951E4001D4BFD /* 飛騨牛バーガー1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "飛騨牛バーガー1.png"; sourceTree = "<group>"; };
+		3238A27D1F7951E4001D4BFD /* 飛騨牛バーガー10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "飛騨牛バーガー10.png"; sourceTree = "<group>"; };
+		3238A27E1F7951E4001D4BFD /* 飛騨牛バーガー2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "飛騨牛バーガー2.png"; sourceTree = "<group>"; };
+		3238A27F1F7951E4001D4BFD /* 飛騨牛バーガー3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "飛騨牛バーガー3.png"; sourceTree = "<group>"; };
+		3238A2801F7951E4001D4BFD /* 飛騨牛バーガー4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "飛騨牛バーガー4.png"; sourceTree = "<group>"; };
+		3238A2811F7951E4001D4BFD /* 飛騨牛バーガー5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "飛騨牛バーガー5.png"; sourceTree = "<group>"; };
+		3238A2821F7951E4001D4BFD /* 飛騨牛バーガー6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "飛騨牛バーガー6.png"; sourceTree = "<group>"; };
+		3238A2831F7951E4001D4BFD /* 飛騨牛バーガー7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "飛騨牛バーガー7.png"; sourceTree = "<group>"; };
+		3238A2841F7951E4001D4BFD /* 飛騨牛バーガー8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "飛騨牛バーガー8.png"; sourceTree = "<group>"; };
+		3238A2851F7951E4001D4BFD /* 飛騨牛バーガー9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "飛騨牛バーガー9.png"; sourceTree = "<group>"; };
 		D579E6571F46D89100C8C945 /* hidagurume.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hidagurume.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D579E65A1F46D89100C8C945 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D579E65C1F46D89100C8C945 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -310,19 +320,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		74F02F5E1F47EABA00FBA9CB /* 飛騨牛バーガー */ = {
+		3238A27B1F7951E4001D4BFD /* 飛騨牛バーガー */ = {
 			isa = PBXGroup;
 			children = (
-				74F02F5F1F47EABA00FBA9CB /* 飛騨牛バーガー2.png */,
-				74F02F601F47EABA00FBA9CB /* 飛騨牛バーガー4.png */,
-				74F02F611F47EABA00FBA9CB /* 飛騨牛バーガー3.png */,
-				74F02F621F47EABA00FBA9CB /* 飛騨牛バーガー5.png */,
-				74F02F631F47EABA00FBA9CB /* 飛騨牛バーガー6.png */,
-				74F02F641F47EABA00FBA9CB /* 飛騨牛バーガー7.png */,
-				74F02F651F47EABA00FBA9CB /* 飛騨牛バーガー8.png */,
-				74F02F661F47EABA00FBA9CB /* 飛騨牛バーガー9.png */,
-				74F02F671F47EABA00FBA9CB /* 飛騨牛バーガー10.png */,
-				74F02F681F47EABA00FBA9CB /* 飛騨牛バーガー1.png */,
+				3238A27C1F7951E4001D4BFD /* 飛騨牛バーガー1.png */,
+				3238A27D1F7951E4001D4BFD /* 飛騨牛バーガー10.png */,
+				3238A27E1F7951E4001D4BFD /* 飛騨牛バーガー2.png */,
+				3238A27F1F7951E4001D4BFD /* 飛騨牛バーガー3.png */,
+				3238A2801F7951E4001D4BFD /* 飛騨牛バーガー4.png */,
+				3238A2811F7951E4001D4BFD /* 飛騨牛バーガー5.png */,
+				3238A2821F7951E4001D4BFD /* 飛騨牛バーガー6.png */,
+				3238A2831F7951E4001D4BFD /* 飛騨牛バーガー7.png */,
+				3238A2841F7951E4001D4BFD /* 飛騨牛バーガー8.png */,
+				3238A2851F7951E4001D4BFD /* 飛騨牛バーガー9.png */,
 			);
 			path = "飛騨牛バーガー";
 			sourceTree = "<group>";
@@ -385,7 +395,7 @@
 		D579E68E1F47231000C8C945 /* resource */ = {
 			isa = PBXGroup;
 			children = (
-				74F02F5E1F47EABA00FBA9CB /* 飛騨牛バーガー */,
+				3238A27B1F7951E4001D4BFD /* 飛騨牛バーガー */,
 				D579E7EC1F47D8DC00C8C945 /* 飛騨牛ステーキ */,
 				D579E7671F47D3D400C8C945 /* あゆ */,
 				D579E72A1F47D3BE00C8C945 /* ぎゅうたまやき */,
@@ -720,8 +730,10 @@
 				D579E7981F47D7D900C8C945 /* あゆ2.png in Resources */,
 				D579E7BF1F47D7FF00C8C945 /* 牛串6.png in Resources */,
 				D579E7961F47D43A00C8C945 /* ラーメン 8.png in Resources */,
+				3238A2861F795267001D4BFD /* 飛騨牛バーガー1.png in Resources */,
 				D579E7C11F47D80500C8C945 /* 五平餅1.png in Resources */,
 				D579E7921F47D43A00C8C945 /* ラーメン 4.png in Resources */,
+				3238A28A1F795267001D4BFD /* 飛騨牛バーガー4.png in Resources */,
 				D579E7D61F47D81600C8C945 /* 飛騨牛カレー 4.png in Resources */,
 				D579E79B1F47D7D900C8C945 /* あゆ5.png in Resources */,
 				D579E7D31F47D81600C8C945 /* 飛騨牛カレー 10.png in Resources */,
@@ -731,6 +743,7 @@
 				D579E7D41F47D81600C8C945 /* 飛騨牛カレー 2.png in Resources */,
 				D579E7911F47D43A00C8C945 /* ラーメン 3.png in Resources */,
 				D579E6AC1F473F3C00C8C945 /* 団子5.png in Resources */,
+				3238A28C1F795267001D4BFD /* 飛騨牛バーガー6.png in Resources */,
 				D579E7CE1F47D81100C8C945 /* 豆腐ステーキ4.png in Resources */,
 				D579E7A21F47D7DF00C8C945 /* ぎゅうたまやき3.png in Resources */,
 				D579E6971F472D4A00C8C945 /* 今までの記録.png in Resources */,
@@ -756,12 +769,14 @@
 				D579E8001F47D8EE00C8C945 /* ステーキ5.png in Resources */,
 				D579E7F91F47D8EE00C8C945 /* ステーキ1.png in Resources */,
 				D579E6AA1F473F3C00C8C945 /* 団子3.png in Resources */,
+				3238A28B1F795267001D4BFD /* 飛騨牛バーガー5.png in Resources */,
 				D579E7971F47D7D900C8C945 /* あゆ1.png in Resources */,
 				D579E7B81F47D7F100C8C945 /* ソーセージ7.png in Resources */,
 				D579E7B61F47D7F100C8C945 /* ソーセージ5.png in Resources */,
 				D579E7CC1F47D81100C8C945 /* 豆腐ステーキ2.png in Resources */,
 				D579E7CA1F47D80C00C8C945 /* 寿司3.png in Resources */,
 				D579E79E1F47D7D900C8C945 /* あゆ8.png in Resources */,
+				3238A2871F795267001D4BFD /* 飛騨牛バーガー10.png in Resources */,
 				D579E7B31F47D7F100C8C945 /* ソーセージ2.png in Resources */,
 				D579E7B11F47D7EB00C8C945 /* コロッケ5.png in Resources */,
 				D579E7AB1F47D7E500C8C945 /* 牛まん6.png in Resources */,
@@ -782,7 +797,9 @@
 				D579E7C01F47D7FF00C8C945 /* 牛串2.png in Resources */,
 				D579E7C91F47D80C00C8C945 /* 寿司2.png in Resources */,
 				D579E8021F47D8EE00C8C945 /* ステーキ7.png in Resources */,
+				3238A2891F795267001D4BFD /* 飛騨牛バーガー3.png in Resources */,
 				D579E7B41F47D7F100C8C945 /* ソーセージ3.png in Resources */,
+				3238A2881F795267001D4BFD /* 飛騨牛バーガー2.png in Resources */,
 				D579E7AC1F47D7E500C8C945 /* 牛まん4.png in Resources */,
 				D579E6A81F473F3C00C8C945 /* 団子1.png in Resources */,
 				D579E7BD1F47D7FF00C8C945 /* 牛串4.png in Resources */,
@@ -801,6 +818,7 @@
 				D579E7A01F47D7DF00C8C945 /* ぎゅうたまやき1.png in Resources */,
 				D579E6961F472D4700C8C945 /* 始める.png in Resources */,
 				D579E7A61F47D7DF00C8C945 /* ぎゅうたまやき7.png in Resources */,
+				3238A28D1F795267001D4BFD /* 飛騨牛バーガー7.png in Resources */,
 				D579E7EA1F47D82300C8C945 /* 朴葉巻き5.png in Resources */,
 				D579E7931F47D43A00C8C945 /* ラーメン 5.png in Resources */,
 				D579E7FE1F47D8EE00C8C945 /* ステーキ3.png in Resources */,
@@ -809,6 +827,8 @@
 				D579E79C1F47D7D900C8C945 /* あゆ6.png in Resources */,
 				D579E69B1F472D4E00C8C945 /* 途中背景.png in Resources */,
 				D579E79F1F47D7D900C8C945 /* あゆ9.png in Resources */,
+				3238A28F1F795267001D4BFD /* 飛騨牛バーガー9.png in Resources */,
+				3238A28E1F795267001D4BFD /* 飛騨牛バーガー8.png in Resources */,
 				D579E7D91F47D81600C8C945 /* 飛騨牛カレー 7.png in Resources */,
 				D579E78F1F47D43A00C8C945 /* ラーメン 1.png in Resources */,
 				D579E7DB1F47D81600C8C945 /* 飛騨牛カレー 9.png in Resources */,

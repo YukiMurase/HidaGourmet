@@ -18,7 +18,7 @@ class PlayViewController: UIViewController ,UIGestureRecognizerDelegate{
     @IBOutlet weak var countDownLabel: UILabel!
     
     let hinmei = ["飛騨牛ステーキ","牛肉カレー","だんご","五平餅","牛串","あゆ","牛まん","朴葉巻き","コロッケ","牛玉焼き","バーガー","すし","ソーセージ","豆腐ステーキ","ラーメン"]
-    let tapsuu = [6,8,5,5,4,7,4,3,4,6,9,2,8,6,0]
+    let tapsuu = [6,8,5,5,4,7,4,6,4,6,9,2,8,6,0]
     let swipesuu = [5,1,1,1,1,1,0,0,0,0,0,0,0,0,0]
     var ram = Int(arc4random_uniform(15))
     var moveTimer: Timer?
@@ -87,6 +87,8 @@ class PlayViewController: UIViewController ,UIGestureRecognizerDelegate{
             nameLabel.text = "飛騨牛ステーキ"
             imagecount = 1
             moveimage1.image = UIImage(named: "ステーキ\(imagecount).png")
+            imagecount = swipesuu[0] + 1
+            countswipe = 1
             break
         case 1:
             explainLabel.text = "上にスワイプで混ぜる"
@@ -192,6 +194,7 @@ class PlayViewController: UIViewController ,UIGestureRecognizerDelegate{
     }
     
     func animateImage(target:UIView){
+        dishcount.text = String(count)
         // 画面1pt進むのにかかる時間の計算
         //let timePerSecond = 30.0 / view.bounds.size.width
         
@@ -275,11 +278,10 @@ class PlayViewController: UIViewController ,UIGestureRecognizerDelegate{
                     out = 1
                 }
             }else if(ram == 7){
-                if(misoflg1 == 2 && misoflg2 == 2){
+                if(misoflg1 == 1 && misoflg2 == 1){
                     imagecount = imagecount + 1
                     moveimage1.image = UIImage(named: "朴葉巻き\(imagecount).png")
-                    counttap = counttap + 1
-                    if(counttap == tapsuu[ram]){
+                    if(imagecount == tapsuu[ram]){
                         count = count + 1
                         testflg = false
                         self.animateImage(target: foodTapView)
@@ -395,7 +397,24 @@ class PlayViewController: UIViewController ,UIGestureRecognizerDelegate{
     // ラーメンが減っていく画像の変化の関数を作成
     func eatramen(timer:Timer){
         ramentype = ramentype + 1
+        if(ramentype < 9){
         moveimage1.image = UIImage(named: "ラーメン \(ramentype).png")
+        }else{
+            count = count + 1
+            testflg = false
+            self.animateImage(target: foodTapView)
+            misoflg1 = 0
+            misoflg2 = 0
+            if(out == 0){
+                correct = correct + 1
+                if(correct % 3 == 0 && correct != 0){
+                    countDownNumber = countDownNumber  + 5
+                }
+            }else{
+                correct = 0
+                out = 0
+            }
+        }
     }
     
 //    @objc func swipe(_ sender: UISwipeGestureRecognizer){
@@ -407,10 +426,11 @@ class PlayViewController: UIViewController ,UIGestureRecognizerDelegate{
     //    print("下")
         if(ram == 0 && flg == 0){
             countswipe = countswipe + 1
+            moveimage1.image = UIImage(named: "ステーキ\(countswipe).png")
         }else{
             out = 1
         }
-        if(countswipe == swipesuu[0]){
+        if(countswipe - 1 == swipesuu[0]){
             flg = 1
             explainLabel.text = "タップで食べる"
         }
@@ -437,8 +457,10 @@ class PlayViewController: UIViewController ,UIGestureRecognizerDelegate{
         }else if(ram == 7){
             if(misoflg1 == 1 && misoflg2 == 0){
                 misoflg2 = misoflg2 + 1
-            }else if(misoflg1 == 2 && misoflg2 == 1){
-                misoflg2 = misoflg2 + 1
+                imagecount = imagecount + 1
+                moveimage1.image = UIImage(named: "朴葉巻き\(imagecount).png")
+                explainLabel.text = "タップで食べる"
+                setumeiLabel2.text = ""
             }else{
                 out = 1
             }
@@ -452,8 +474,8 @@ class PlayViewController: UIViewController ,UIGestureRecognizerDelegate{
         if(ram == 7){
             if(misoflg1 == 0 && misoflg2 == 0){
                 misoflg1 = misoflg1 + 1
-            }else if(misoflg1 == 1 && misoflg2 == 1){
-                misoflg1 = misoflg1 + 1
+                imagecount = imagecount + 1
+                moveimage1.image = UIImage(named: "朴葉巻き\(imagecount).png")
             }else{
                 out = 1
             }
@@ -467,6 +489,8 @@ class PlayViewController: UIViewController ,UIGestureRecognizerDelegate{
         if(ram == 1 && flg == 0){
             flg = 1
             explainLabel.text = "タップで食べる"
+            imagecount = imagecount + 1
+            moveimage1.image = UIImage(named: "飛騨牛カレー \(imagecount).png")
         }else{
             out = 1
         }
@@ -474,12 +498,13 @@ class PlayViewController: UIViewController ,UIGestureRecognizerDelegate{
     
     //ピンチ時の呼び出しメソッド
     @IBAction func pinchLabel(sender: UIPinchGestureRecognizer) {
-        if(ram == 6){
+        if(ram == 6 && flg == 0){
         // ピンチの動作
         if(sender.state == UIGestureRecognizerState.began ){
             //ピンチ開始時のアフィン変換をクラス変数に保持する。
             imagecount = imagecount + 1
             moveimage1.image = UIImage(named: "牛まん\(imagecount).png")
+            explainLabel.text = "タップで食べる"
             flg = 1
         }
         }else{
