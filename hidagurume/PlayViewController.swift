@@ -185,8 +185,8 @@ class PlayViewController: UIViewController ,UIGestureRecognizerDelegate{
             explainLabel.text = "長押しで食べる"
             setumeiLabel2.text = ""
             nameLabel.text = "ラーメン"
-            moveimage1.image = UIImage(named: "ラーメン \(ramentype).png")
             ramentype = 1
+            moveimage1.image = UIImage(named: "ラーメン \(ramentype).png")
             break
         default:
             break
@@ -263,6 +263,7 @@ class PlayViewController: UIViewController ,UIGestureRecognizerDelegate{
                         count = count + 1
                         testflg = false
                         self.animateImage(target: foodTapView)
+                        counttap = 0
                         flg = 0
                         if(out == 0){
                             correct = correct + 1
@@ -397,14 +398,18 @@ class PlayViewController: UIViewController ,UIGestureRecognizerDelegate{
     // ラーメンが減っていく画像の変化の関数を作成
     func eatramen(timer:Timer){
         ramentype = ramentype + 1
-        if(ramentype < 9){
+        if(ramentype > 0 && ramentype < 9){
         moveimage1.image = UIImage(named: "ラーメン \(ramentype).png")
         }else{
             count = count + 1
             testflg = false
+            ramentype = 0
             self.animateImage(target: foodTapView)
             misoflg1 = 0
             misoflg2 = 0
+            print("hoge")
+            // タイマーストップ
+            moveTimer?.invalidate()
             if(out == 0){
                 correct = correct + 1
                 if(correct % 3 == 0 && correct != 0){
